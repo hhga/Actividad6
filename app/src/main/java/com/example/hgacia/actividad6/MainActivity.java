@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView tv_temp = (TextView) findViewById(R.id.tv_temp);
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://localhost/Actividad2/clima";
+        String url = "http://192.168.15.5/actividad2/clima";
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
